@@ -107,7 +107,7 @@ html {
 }
 .rera-section p{
   font-size:13px;
-  margin-bottom:12px;
+  /* margin-bottom:12px; */
 }
 
 .amenity-tab.active {
@@ -790,7 +790,7 @@ header .call {
 }
 
 .slide-text{
-  	top: 23%;
+  	top: 28%;
 	position:absolute;
 	z-index:98;
 	color:#fff;
