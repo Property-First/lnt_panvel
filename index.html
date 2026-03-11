@@ -48,6 +48,28 @@ color: black;
 }
 .button_back{
   background: linear-gradient(-45deg, var(--colorPri), var(--colorSecon), var(--colorPri), var(--colorSecon));
+  background-size: 400% 400%;
+  animation: gradientMove 6s ease infinite;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/* Animation */
+@keyframes gradientMove {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
 }
 </style>
 </head>
@@ -144,7 +166,7 @@ color: black;
 </ul>
 <p class="text-center fw-semibold">Luxurious 2, 3 & 4 BHK</p>
         <p class="text-center text-dark fw-bold fs-2">Starting Price</p>
-        <h4 class="text-center fw-bold fs-6" style="background: linear-gradient(-45deg, var(--colorPri), var(--colorSecon), var(--colorPri), var(--colorSecon)); color: white; padding: 5px; border-radius: 5px;">₹ 1. 18 Cr* Onwards</h4>
+        <h4 class="text-center fw-bold fs-6 button_back" style="font-size: 20px; color: white; padding: 5px; border-radius: 5px;">₹ 1. 18 Cr* Onwards</h4>
 
 
 
@@ -203,8 +225,8 @@ color: black;
 
 	<div class="container">
 		<div class="text-center">
-			<div class="subtitle2 text-white">Overview</div>
-			<h2 class="text-white"> L&T Panvel </h2>
+			<div class="subtitle2 ">Overview</div>
+			<h2 class=""> L&T Panvel </h2>
 		</div>
 
 		<div class="row">
@@ -221,7 +243,7 @@ color: black;
 		</div>
 
 		<div class="text-center mt-3">
-			<a class="btn2 button_back" href="#enquire" data-toggle="modal"> Enquire Now</a>
+			<a class="button_back" href="#enquire" data-toggle="modal"> Enquire Now</a>
 		</div>
 	</div>
 </div><!-- overview end -->
@@ -243,7 +265,7 @@ color: black;
                         <h6 class="font-weight-bolder"> Built-up: 790 - 855 SqFt</h6>
 						<h6 class="font-weight-bolder"> Price: ₹ 1.18 Cr Onwards</h6>
 
-                        <div class="btn3"><span class="button mx-auto">Complete Costing Details</span></div>
+                        <div class=""><span class="button mx-auto button_back">Complete Costing Details</span></div>
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6 text-center">
@@ -252,7 +274,7 @@ color: black;
                         <h6 class="font-weight-bolder"> Built-up: 1075 - 1242 SqFt</h6>
 						<h6 class="font-weight-bolder"> Price: ₹ 1.60 Cr Onwards</h6>
 
-                        <div class="btn3"><span class="button mx-auto">Complete Costing Details</span></div>
+                        <div class=""><span class="button mx-auto button_back">Complete Costing Details</span></div>
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6 text-center">
@@ -261,7 +283,7 @@ color: black;
                         <h6 class="font-weight-bolder"> Built-up: 1441 SqFt</h6>
 						<h6 class="font-weight-bolder"> Price: ₹ 2.15 Cr Onwards</h6>
 
-                        <div class="btn3"><span class="button mx-auto">Complete Costing Details</span></div>
+                        <div class=""><span class="button mx-auto button_back">Complete Costing Details</span></div>
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6 text-center">
@@ -271,7 +293,7 @@ color: black;
 						<h6 class="font-weight-bolder"> Built-up: 1796 SqFt</h6>
 						<h6 class="font-weight-bolder"> Price: ₹ 2.68 Cr Onwards</h6>
 
-                        <div class="btn3"><span class="button mx-auto">Complete Costing Details</span></div>
+                        <div class=""><span class="button mx-auto button_back">Complete Costing Details</span></div>
                     </a>
                 </div>
 				
@@ -316,14 +338,14 @@ color: black;
 
 			<div class="col-md-6 mb-4">
 				<a href="#enquire" data-toggle="modal">
-					<img src="./images/floor_plan.webp" alt="Site Plan" class="img-fluid gallery" style="filter: blur(2px);" />
+					<img src="./images/floor_plan.webp" alt="Site Plan" class="img-fluid gallery" style="filter: blur(1px);" />
 
 				</a>
 
 			</div>
 			<div class="col-md-6">
 				<a href="#enquire" data-toggle="modal">
-					<img src="./images/floor_plan_2.jpg" alt="Site Plan" class="img-fluid gallery" style="filter: blur(2px);" />
+					<img src="./images/floor_plan_2.jpg" alt="Site Plan" class="img-fluid gallery" style="filter: blur(1px);" />
 
 				</a>
 
@@ -334,7 +356,7 @@ color: black;
 
 		</div>
 			<center><div class="text-center mt-3">
-				<a class="btn3" a href="#enquire" data-toggle="modal">View More</a>
+				<a class="button_back" a href="#enquire" data-toggle="modal">View More</a>
 					</div></center>
 	</div>
 </div>
@@ -343,7 +365,7 @@ color: black;
 		<div class="animate" id="up-ten">
 
 			<div class="text-center">
-				<div class="subtitle2 text-white">L&T Panvel - Project Gallery </div>
+				<div class="subtitle2">L&T Panvel - Project Gallery </div>
 
 			</div>
 
@@ -402,8 +424,8 @@ color: black;
     <div class="animate" id="up-ten">
 
       <div class="text-center">
-        <div class="subtitle2 text-white">L&T Panvel</div>
-        <h2 class="text-white">Amenities</h2>
+        <div class="subtitle2">L&T Panvel</div>
+        <h2 class="">Amenities</h2>
       </div>
 
       <!-- Tabs -->
@@ -488,7 +510,7 @@ color: black;
  
 
       <div class="text-center mt-5">
-        <a class="btn2" href="#enquire" data-toggle="modal">Know More</a>
+        <a class="button_back" href="#enquire" data-toggle="modal">Know More</a>
       </div>
 
     </div>
@@ -598,7 +620,7 @@ color: black;
 
 		</div>
 		<div class="text-center mt-3">
-			<a class="btn2"  href="#enquire" data-toggle="modal"><i class="fa fa-car"></i> Schedule a Visit </a>
+			<a class="button_back"  href="#enquire" data-toggle="modal"><i class="fa fa-car"></i> Schedule a Visit </a>
 		</div>
 	</div>
 </div><!-- location end -->
@@ -649,6 +671,58 @@ color: black;
 	</div>
 </div>
 
+<div class="slide" id="overview">
+
+	<div class="container">
+		<div class="text-center">
+			<div class="subtitle2 ">About L&T Realty</div>
+			<!-- <h2 class="">About L&T Realty </h2> -->
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 align-self-center text-center">
+				<div class="text-lg-start text-center">
+					<h4></h4>
+
+				</div>
+
+				<p>The real estate arm of Larsen and Toubro, L&T Realty, was established in 2011. The firm is famous for developing residential, retail, and commercial real estate buildings that stand out for their unique and sleek designs. Besides building the Grand Central Mall in Seawoods, it is famous for its beautiful residential complexes across popular locales such as Powai, South Bombay, and Navi Mumbai.</p>
+			</div>
+		</div>
+
+		<div class="text-center mt-3">
+			<a class=" button_back" href="#enquire" data-toggle="modal"> Enquire Now</a>
+		</div>
+	</div>
+</div>
+<section class="rera-section py-4">
+  <div class="container">
+    
+    <p>
+      <i class="fas fa-check text-success me-2"></i>
+      Project Registered under Government of India RERA Act 2016
+    </p>
+
+    <p>
+      <i class="fas fa-check text-success me-2"></i>
+      Government RERA Authorised Advertiser's: Home Bazaar Services Pvt Ltd,
+      Registration No A52000000045, CIN U45400MH2013PTC242930.
+    </p>
+
+    <p>
+      <i class="fas fa-check text-success me-2"></i>
+      <strong>Site Address:</strong> L&T Panvel: Panvel, Mumbai, Maharashtra
+    </p>
+
+    <p>
+      <i class="fas fa-check text-success me-2"></i>
+      <strong>Contact Us:</strong> Corporate Office: L&T Realty: L&T House,
+      Ballard Estate, Mumbai, India
+    </p>
+
+  </div>
+</section>
+
 <!-- contact start -->
 <div class="" id="contact" data-slide="contact" data-stellar-background-ratio="0">
 	<footer>
@@ -659,7 +733,7 @@ color: black;
 
 			</div>
 			  <div class="col-md-12 disclaimer">
-				<h5> <a style="color:#e3cf88;font-size:13px;padding-bottom:20px !important;text-transform: capitalize;" href="privacy.html">Disclaimer &amp; Privacy Policy</a></h5>
+				<h5> <a style="color:#e3cf88;font-size:13px;padding-bottom:20px !important;text-transform: capitalize;" href="privacy.html">Disclaimer &amp; Privacy Policy</a> | <a style="color:#e3cf88;font-size:13px;padding-bottom:20px !important;text-transform: capitalize;" href="terms-condition.html">Terms and Condition</a> | <a style="color:#e3cf88;font-size:13px;padding-bottom:20px !important;text-transform: capitalize;" href="cookie.html">Cookie Policy</a></h5>
 			  </div>
 			</div>
 		</div>
@@ -714,7 +788,7 @@ color: black;
                   <p style="font-size: 10px; line-height: 10px; color: black;">I consent to receive RCS, WhatsApp, Email, and SMS from property-first.com & I have reviewed and agreed to the Terms & Conditions and Privacy Policy.</p>
 								</div>
 						<div class="col-12 text-center">
-							<button class="zf-submitColor btn4 w-100" name="Submit" value="Submit" type="submit" >Submit</button>
+							<button class="zf-submitColor w-100 button_back" name="Submit" value="Submit" type="submit" >Submit</button>
 						</div>
 					</div>
 				</form>
