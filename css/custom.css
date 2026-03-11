@@ -2,9 +2,19 @@
 
 :root{
 	--colorDark:#191919;
-	--colorPrimary:#14394b;
-	--colorBlue: #168986;
+	--colorPrimary:#808080;
+	--colorBlue: #ab6a00;
+	--colorPri: #ab6a00;
+  --colorSecon: #283c96;
 }
+
+/* :root{
+  --colorPri: #ab6a00;
+  --colorSecon: #283c96;
+} */
+/* .button_back{
+  background: linear-gradient(-45deg, var(--colorPri), var(--colorSecon), var(--colorPri), var(--colorSecon));
+} */
 
 body{
 	-webkit-user-select: none;
@@ -809,7 +819,7 @@ letter-spacing: 0.5px;
 line-height: 21px;
 }
 .brief h3{
-font-size: 1rem !important;
+font-size: 12px !important;
   font-family: 'AR One Sans', sans-serif !important;
   color: #FFF;
   padding: 5px !important;
@@ -909,7 +919,7 @@ font-size: 1rem !important;
 	float: right;
 	font-weight:700;
 
-	background:radial-gradient(circle at 90% -102%, #14394b, #14394b);
+	background:var(--colorPrimary);
 	margin-top:0;
 	text-align:left;
 	padding:20px;
@@ -925,7 +935,7 @@ font-size: 1rem !important;
 	padding:0;
 }
 .enquiry form button{
-  background: var(--colorBlue);
+  /* background: var(--colorBlue); */
   width: 100%;
   display: block;
   padding: 0px 20px;
@@ -962,7 +972,8 @@ font-size: 1rem !important;
 	padding:0;
 }
 .enquirys form button{
-  background: var(--colorBlue);
+   background: linear-gradient(-45deg, var(--colorPri), var(--colorSecon), var(--colorPri), var(--colorSecon));
+
   width: 100%;
   display: block;
   padding: 0px 20px;
@@ -1461,7 +1472,7 @@ background: #fff;
 	height: 300px;
 	border: solid 5px rgba(0,0,0,.3);
 	box-shadow: 0px 10px 15px -5px rgba(0,0,0,.15);
-	filter: blur(6px);
+	filter: blur(3px);
 }
 .floor-plan img{
 	width: 100%;
@@ -2093,7 +2104,8 @@ border: 0;
 border-radius: 5px;
 text-align: center;
 cursor: pointer;
-background: #168986;
+ background: linear-gradient(-45deg, var(--colorPri), var(--colorSecon), var(--colorPri), var(--colorSecon));
+
 color: white !important;
 box-shadow: 0px 5px 10px rgba(0,0,0,.1);
 transition: all ease-in-out 0.2s;
@@ -2105,7 +2117,8 @@ transition: all ease-in-out 0.2s;
 	box-shadow: 0px 5px 10px rgba(0,0,0,.2);
 }
 .btn3{
-	background:var(--colorPrimary);
+	 background: linear-gradient(-45deg, var(--colorPri), var(--colorSecon), var(--colorPri), var(--colorSecon));
+
 	display:inline-block;
 	padding: 0px 10px;
 line-height: 35px;
@@ -2130,7 +2143,8 @@ line-height: 35px;
 .gallery:hover{-webkit-transform: scale(1);
 	transform: scale(1);}
 .btn4{
-	background:var(--colorPrimary);
+	 background: linear-gradient(-45deg, var(--colorPri), var(--colorSecon), var(--colorPri), var(--colorSecon));
+
 	width:100%;
 	display:block;
 	padding:0px 20px;
@@ -2148,7 +2162,7 @@ line-height: 35px;
 	-webkit-transition:all ease-in-out 0.2s;
 }
 .btn4:hover{
-	background:var(--colorBlue)!important;
+	/* background:var(--colorBlue)!important; */
 	color:#ffff!important;
 }
 .btn5{

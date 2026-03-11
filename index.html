@@ -15,7 +15,7 @@
 <meta name="YahooSeeker" content="INDEX, FOLLOW">
 <meta name="msnbot" content="INDEX, FOLLOW">
 <meta name="googlebot" content="index, follow" />
-<link rel="shortcut icon" href="images/favicon.webp">
+<!-- <link rel="shortcut icon" href="images/favicon.webp"> -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" type="text/css" media="all" href="css/menu.css" />
@@ -41,6 +41,14 @@ color: black;
 width: 100%;
 color: black;
 }
+
+:root{
+  --colorPri: #ab6a00;
+  --colorSecon: #283c96;
+}
+.button_back{
+  background: linear-gradient(-45deg, var(--colorPri), var(--colorSecon), var(--colorPri), var(--colorSecon));
+}
 </style>
 </head>
 <body>
@@ -48,7 +56,7 @@ color: black;
         <header>
             <div class="container-fluid">
 				<div class="logo">
-					<img src="./images/logo_l&t.jpeg">
+					<img src="./images/logo_new_lnt.jpg">
                 </div>
 
                 <div class="header-right">
@@ -66,7 +74,7 @@ color: black;
 						<!--Menu HTML Code-->
 						<nav class="wsmenu slideLeft clearfix">
 							<ul class="mobile-sub wsmenu-list navigation">
-								<li class="d-block d-lg-none menu-logo"><img src="./images/logo_l&t.jpeg" alt="Sowparnika" /></li>
+								<li class="d-block d-lg-none menu-logo"><img src="./images/logo_new_lnt.jpg" alt="Sowparnika" /></li>
 								<li><a href="#overview">Overview</a></li>
 
 								<li><a href="#floor-plan">Floor Plan</a></li>
@@ -77,6 +85,7 @@ color: black;
 								<li><a href="#location">Location</a></li>
 								<li><a href="#virtua-tour">Virtual Tour</a></li>
 
+<!-- #ab6a00 #283c96 -->
 
 							</ul>
 
@@ -97,7 +106,7 @@ color: black;
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<img src="./images/d1.webp" class="d-none d-md-block" alt="Sowparnika">
-					<img src="./images/d1.webp" class="d-block d-md-none" style="margin-top: 55px;" alt="Sowparnika">
+					<img src="./images/d1.webp" class="d-block d-md-none" style="margin-top: 85px;" alt="Sowparnika">
 				</div>
 
 			</div>
@@ -116,7 +125,7 @@ color: black;
 								<h5 class="text-center text-dark">At Panvel</h5>
 
 
-	<h3 class=" zoom-list text-center fw-bold" style="background-color: #168986;"><span style=""><b> Get Instant Benefit On Spot Booking<br/> Flexipay For First 100 Customers <br/> Save Big with Early Bird Discounts </span></b>
+	<h3 class=" zoom-list text-center fw-bold" style="background: linear-gradient(-45deg, var(--colorPri), var(--colorSecon), var(--colorPri), var(--colorSecon));"><span style=""><b> Get Instant Benefit On Spot Booking<br/> Flexipay For First 100 Customers <br/> Save Big with Early Bird Discounts </span></b>
 	</h3>
 	<!-- <h3 class="zoom-list text-center text-warning fw-bold" style="background-color: rgba(34, 241, 224, 0.638);"><span style="color:black"><b>123456789 </span></b></h3> -->
 	                          <ul class="list-unstyled bg-light rounded-3">
@@ -133,9 +142,9 @@ color: black;
     <i class="fa fa-caret-right text-primary me-2 pr-2"></i> Units: 725
   </li> -->
 </ul>
-<p class="text-center fw-semibold">Luxurious 2, 3 & 4 BHK Starts from</p>
+<p class="text-center fw-semibold">Luxurious 2, 3 & 4 BHK</p>
         <p class="text-center text-dark fw-bold fs-2">Starting Price</p>
-        <h4 class="text-center text-large fw-bold fs-6">₹ 1. 18 Cr* Onwards</h4>
+        <h4 class="text-center fw-bold fs-6" style="background: linear-gradient(-45deg, var(--colorPri), var(--colorSecon), var(--colorPri), var(--colorSecon)); color: white; padding: 5px; border-radius: 5px;">₹ 1. 18 Cr* Onwards</h4>
 
 
 
@@ -168,8 +177,12 @@ color: black;
 								<div class="col-12">
 									<input type="tel" name="full_number" id="phone_number" required />
 								</div>
+                <div class="col-12" style="display: flex; gap: 4px; margin-bottom: 10px;">
+									<input type="checkbox" checked required />
+                  <p style="font-size: 10px; line-height: 10px;">I consent to receive RCS, WhatsApp, Email, and SMS from property-first.com & I have reviewed and agreed to the Terms & Conditions and Privacy Policy.</p>
+								</div>
 								<div class="col-12 text-center">
-									<button class="zf-submitColor btn4 w-100" name="Submit" value="Submit" type="submit" >Submit</button>
+									<button class="zf-submitColor btn4 w-100 button_back" name="Submit" value="Submit" type="submit" >Submit</button>
 								</div>
 							</div>
 						</form>
@@ -208,7 +221,7 @@ color: black;
 		</div>
 
 		<div class="text-center mt-3">
-			<a class="btn2" a href="#enquire" data-toggle="modal"> Enquire Now</a>
+			<a class="btn2 button_back" href="#enquire" data-toggle="modal"> Enquire Now</a>
 		</div>
 	</div>
 </div><!-- overview end -->
@@ -303,14 +316,14 @@ color: black;
 
 			<div class="col-md-6 mb-4">
 				<a href="#enquire" data-toggle="modal">
-					<img src="./images/floor_plan.webp" alt="Site Plan" class="img-fluid gallery" style="filter: blur(3px);" />
+					<img src="./images/floor_plan.webp" alt="Site Plan" class="img-fluid gallery" style="filter: blur(2px);" />
 
 				</a>
 
 			</div>
 			<div class="col-md-6">
 				<a href="#enquire" data-toggle="modal">
-					<img src="./images/floor_plan_2.jpg" alt="Site Plan" class="img-fluid gallery" style="filter: blur(3px);" />
+					<img src="./images/floor_plan_2.jpg" alt="Site Plan" class="img-fluid gallery" style="filter: blur(2px);" />
 
 				</a>
 
@@ -619,6 +632,10 @@ color: black;
                         <div class="col-12">
                             <input type="tel" name="full_number" id="phone_number1" required />
                         </div>
+                         <div class="col-12" style="display: flex; gap: 4px; margin-bottom: 10px;">
+									<input type="checkbox" checked required />
+                  <p style="font-size: 10px; line-height: 10px; color: black;">I consent to receive RCS, WhatsApp, Email, and SMS from property-first.com & I have reviewed and agreed to the Terms & Conditions and Privacy Policy.</p>
+								</div>
 						<div class="col-12 text-center">
 							<button class="zf-submitColor btn4 w-100" name="Submit" value="Submit" type="submit" >Submit</button>
 						</div>
@@ -678,7 +695,7 @@ color: black;
 
 
 				<div class="mb-r">
-					<div class="text-center"><img src="./images/logo_l&t.jpeg">
+					<div class="text-center"><img src="./images/logo_new_lnt.jpg">
 						<h2>Download Brochure </h2>
 					</div>
 					<form action="send-email.php" method="POST" role="form">
@@ -692,6 +709,10 @@ color: black;
                         <div class="col-12">
                             <input type="tel" name="full_number" id="phone_number2" required />
                         </div>
+                         <div class="col-12" style="display: flex; gap: 4px; margin-bottom: 10px;">
+									<input type="checkbox" checked required />
+                  <p style="font-size: 10px; line-height: 10px; color: black;">I consent to receive RCS, WhatsApp, Email, and SMS from property-first.com & I have reviewed and agreed to the Terms & Conditions and Privacy Policy.</p>
+								</div>
 						<div class="col-12 text-center">
 							<button class="zf-submitColor btn4 w-100" name="Submit" value="Submit" type="submit" >Submit</button>
 						</div>
