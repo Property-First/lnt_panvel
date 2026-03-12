@@ -3,8 +3,8 @@
 :root{
 	--colorDark:#191919;
 	--colorPrimary:#808080;
-	--colorBlue: #ab6a00;
-	--colorPri: #ab6a00;
+	--colorBlue: #ffca06;
+	--colorPri: #ffca06;
   --colorSecon: #283c96;
 }
 
@@ -147,7 +147,7 @@ html {
 
 .tab-btn.active {
   background: var(--colorBlue);
-  color: white;
+  /* color: white; */
 }
 
 .tab-content {
@@ -947,7 +947,7 @@ font-size: 12px !important;
   padding: 0px 20px;
   line-height: 38px;
   font-weight: 600 !important;
-  color: white !important;
+  color: black !important;
   text-decoration: none !important;
   text-transform: uppercase;
   font-size: 17px;
@@ -978,14 +978,14 @@ font-size: 12px !important;
 	padding:0;
 }
 .enquirys form button{
-   background: linear-gradient(-45deg, var(--colorPri), var(--colorSecon), var(--colorPri), var(--colorSecon));
+   background:var(--colorPri);
 
   width: 100%;
   display: block;
   padding: 0px 20px;
   line-height: 36px;
   font-weight: 600 !important;
-  color: white !important;
+  color:  black !important;
   text-decoration: none !important;
   text-transform: uppercase;
   font-size: 17px;
